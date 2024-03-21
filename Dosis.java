@@ -19,13 +19,13 @@ public class Dosis {
             System.out.print("Introduce el día (1-30) en el que debe parar de incrementarse la cantidad de alimento:\n");
             dosis.diaIncremento = scanner.nextInt();
             scanner.nextLine(); 
-            System.out.print("Introduce la cantidad maxima (en gramos) hasta la que debe incrementarse  el alimento el día " + dosis.diaIncremento);
+            System.out.print("Introduce la cantidad maxima (en gramos) hasta la que debe incrementarse:");
             dosis.cantidadMaxima = scanner.nextDouble();
             scanner.nextLine(); 
-            System.out.print("Introduce el día (1-30) en el que termina el experimento");
+            System.out.print("Introduce el día (1-30) en el que termina el experimento:");
             dosis.diaFinal = scanner.nextInt();
             scanner.close();
-            
+
             dosis.imprimirDosis();
         }
 
