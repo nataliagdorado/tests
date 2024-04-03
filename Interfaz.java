@@ -1,48 +1,32 @@
-/*
-import java.text.SimpleDateFormat;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Interfaz {
-    private Scanner scanner;
-    private SimpleDateFormat formatoFecha;
+    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-   /* public interfaz() {
-        scanner = new Scanner(System.in);
-        formatoFecha = new SimpleDateFormat("dd/mm/aaaa");
-    }
-*/
-/* 
-
-
-
-    public static String scanTexto(String dato) {
+    public static String scanTexto(String dato) throws IOException {
         System.out.print(dato);
-        return scanner.nextLine();
+        return reader.readLine();
     }
 
-    public int scanInt(String dato){
+    public static int scanInt(String dato) throws IOException {
         System.out.print(dato);
-        int num=scanner.nextInt();
-        scanner.nextLine();
-        return num;
+        return Integer.parseInt(reader.readLine());
     }
 
-    public int scanInt(int dato){
+    public static int scanInt(int dato) throws IOException {
         System.out.print(dato);
-        int num=scanner.nextInt();
-        scanner.nextLine();
-        return num;
-
+        return Integer.parseInt(reader.readLine());
     }
-    public double scanDouble(int dato){
+
+    public static double scanDouble(int dato) throws IOException {
         System.out.print(dato);
-        double num=scanner.nextInt();
-        scanner.nextLine();
-        return num;
-
+        return Double.parseDouble(reader.readLine());
     }
 
-
+    public static double scanDoubleS(String dato) throws IOException {
+        System.out.print(dato + " ");
+        return Double.parseDouble(reader.readLine());
+    }
 }
-
- */

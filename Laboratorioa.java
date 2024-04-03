@@ -1,10 +1,10 @@
-import java.io.BufferedReader;
+/*import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Laboratorio {
+public class Laboratorioa {
     private List<Experimento> experimento = new ArrayList<>();
     private int idE;
 
@@ -89,3 +89,4 @@ class Experimento {
         }
     }
 }
+*/
